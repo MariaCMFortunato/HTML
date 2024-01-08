@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form>
+            <input type="radio" name = "interesse2" value="interessado" checked onchange="document.getElementById('message').innerHTML='Interessado'">
+            Interessado<br>
+
+            <input type="radio" name ="interesse2" value=" nao interessado" 
+            onchange="document.getElementById('message').innerHTML='Não interessado'">
+            Não Interessado<br>
+
+            <input type="radio" name ="interesse2" value="Talvez"
+            onchange="document.getElementById('message').innerHTML='Talvez'">
+            Talvez<br>
+
+            <textarea name="message" id="message" rows='2' cols ='60'>
+                Aqui escrevo o texto
+            </textarea>
+        </form>
+    </body>
+</html>
