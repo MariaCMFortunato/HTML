@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+    h1{
+        font-size: 20px;
+        color:blue;
+    }
+</style>
+<script>
+    function eprimo(valor)
+    {
+        var i;
+        for(i=2;i<=valor-1;i++)
+        {
+            if( valor%i==0)
+                return false;
+        }
+        return true;
+    }
+    function verprimos()
+    {
+        var y=prompt("Indique um valor:")
+        var texto="";
+        var x=0;
+        while(x<y)
+        {
+            x=x+1;
+            if(eprimo(x))
+                texto=texto+x+" ";
+        }
+        alert(texto);
+    }
+</script>
+</head>
+<body onload="verprimos()">
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <script>
+        var x = 0;
+        var y = 50;
+        var z = 100;
+        var w = 150;
+        var aumento = 10;
+        function inicializa() {
+            setInterval(function () { atualiza(); }, 100);
+        }
+        function atualiza() {
+            x = x + aumento;
+            if (x >= 255)
+                aumento = -10;
+            if (x <= 0)
+                aumento = 10;
+            if (y >= 255)
+                aumento = -10;
+            if (y <= 0)
+                aumento = 10;
+            if (z >= 255)
+                aumento = -10;
+            if (z <= 0)
+                aumento = 10;
+            document.body.style = "background-color: rgb(" + z + ", " + x + ", " + y + ")";
+            document.getElementById("p1").style = "color:rgb(" + x + ", " + y + ", " + z + ")";
+            document.getElementById("p1").innerHTML = x;
+        }
+    </script>
+    <!--<script>
+        var x=0;
+        var d=1;
+        function inicializa() {
+            setInterval(function(){actualiza();}, 100);
+        }
+     
+        function actualiza() {
+            var el = document.getElementById('p1');
+            if(x+d > 255 || x+d < 0) d = 0 - d;
+            x=x+d;
+     
+            if(el) {
+                let c = (255-x)/2;
+                el.innerHTML = x;
+                document.body.style = 'background-color: rgb('+c/4+','+c/2+','+c+')';
+                el.style = 'color: rgb('+x+',0,0); font-size: 200px; text-align: center';
+            }
+        }
+    </script>-->
+</head>
+
+<body onload="inicializa()">
+    <h1 id="p1" style="font-size:larger; text-align:center"></h1>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <script>
+        var posRaquete = 0;
+        function MexeORato(event) {
+            posRaquete = event.clientX - 50;
+            document.getElementById("raquete").style.left = posRaquete + "px";
+        }        
+    </script>
+</head>
+
+<body>
+    <div onmousemove="MexeORato(event)" style="width:1000px; height:1000px">
+        <br>
+        <img id="raquete" src="raquete.png" style="width: 200px; position: absolute; top:400px">
+    </div>
+</body>
+
+</html>

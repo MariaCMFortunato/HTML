@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+    h1{
+        font-size: 20px;
+        color:blue;
+    }
+</style>
+<script type="text/javascript">
+    function AdicionaA()
+    {
+        document.getElementById("result").innerHTML=document.getElementById("result").innerHTML+"A";
+    }
+    function AdicionaB()
+    {
+        document.getElementById("result").innerHTML=document.getElementById("result").innerHTML+"B";
+    }
+    function AdicionaC()
+    {
+        document.getElementById("result").innerHTML=document.getElementById("result").innerHTML+"C";
+    }
+    
+</script>
+</head>
+<body>
+    <button onclick="AdicionaA()">A</button><br>
+    <button onclick="AdicionaB()">B</button><br>
+    <button onclick="AdicionaC()">C</button><br>
+    <div id="result"></div>
+</body>
+</html>

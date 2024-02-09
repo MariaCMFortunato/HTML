@@ -1,0 +1,135 @@
+.carro
+{
+    width: 600px;
+    height: 200px;
+    background: url('carro.png');
+    background-size: 100%;
+    position: absolute;
+    animation-name: animacaoCarro;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.roda
+{
+    position: absolute;
+    top: 144px;
+    width: 86px;
+    height: 86px;
+    /*background: url('carro.png');*/
+    /*background-color: 100%;*/
+    animation-name: animacaoRoda;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    filter: invert(0.8);
+}
+.condutor{
+    position:absolute;
+    top: 61px;
+    animation-name: animacaoCabeca;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animacaoCabeca{
+    0% {-webkit-transform: rotate(-3deg)}
+    50% {-webkit-transform: rotate(5deg)}
+    100% {-webkit-transform: rotate(-3deg)}
+}
+
+@keyframes animacaoRoda {
+    0% {-webkit-transform: rotate(0deg)}
+    100% {-webkit-transform: rotate(360deg)}
+
+}
+.estrada{
+    z-index: -1;
+    position:absolute;
+    width:250%;
+    top:150px;
+    left:0px;
+    background-color: grey;
+    height:200px;
+}
+
+.marcas{
+    height: 0px;
+    width: 250%;
+    position:absolute;
+    left:-10%;
+    top: 60px;
+    background-color: grey;
+    border-top: 40px dashed whitesmoke;
+    margin-top: 25px;
+    animation: estradaMov 10s infinite linear;
+}
+
+@keyframes estradaMov {
+    0% {left: 0px;}
+    100%{left:-2400px;}
+    
+}
+@keyframes animacaoCarro{
+    0% {left: 0px;}
+    100% {left: 1000px;} 
+}
+
+.ceu{
+    position:absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(169, 228, 250);
+    height: 200px;
+}
+
+.edificio1{
+    position:absolute;
+    width: 300px;
+    height: 200px;
+    top: 0px;
+    left: 0px;
+    background: url("building.jpg");
+    background-size: 100% 100%;
+    animation: edificioMov 10s infinite linear;
+}
+
+.edificio2{
+    position:absolute;
+    width: 300px;
+    height: 200px;
+    top: 0px;
+    left: 0px;
+    background: url("building.jpg");
+    background-size: 100% 100%;
+    animation: edificioMov1 10s infinite linear;
+}
+
+.edificio3{
+    position:absolute;
+    width: 300px;
+    height: 200px;
+    top: 0px;
+    left: 0px;
+    background: url("building.jpg");
+    background-size: 100% 100%;
+    animation: edificioMov2 10s infinite linear;
+}
+
+@keyframes edificioMov{
+    0% {left: 2000px;}
+    100% {left: -400px;}
+}
+
+@keyframes edificioMov1{
+    0% {left: 1500px;}
+    100% {left: -800px;}
+}
+
+@keyframes edificioMov2{
+    0% {left: 1000px;}
+    100% {left: -1200px;}
+}

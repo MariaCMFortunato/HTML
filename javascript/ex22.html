@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <script>
+        var x = 0;
+        var y = 0;
+        /*var z = 100;
+        var w = 150;*/
+        var aumentox = 10;
+        var aumentoy = 15
+        function inicializa() {
+            setInterval(function () { atualiza() }, 10);
+        }
+        function atualiza() {
+            x = x + aumentox;
+            y = y + aumentoy;
+            if (x >= window.innerWidth - 200)
+                aumentox = -10;
+            if (x <= 0)
+                aumentox = 10;
+
+            if (y >= window.innerHeight - 200)
+                aumentoy = -15;
+            if (y <= 0)
+                aumentoy = 15;
+            document.getElementById("i1").style.left = x + "px";
+            document.getElementById("i1").style.top = y + "px";
+        }
+    </script>
+</head>
+
+<body onload="inicializa()">
+    <br>
+    <img id="i1" src="1.png" style="position:absolute; width:200px">
+</body>
+
+</html>
+<!--<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+</head>
+<body onload="inicializa()">
+<img id='i1' src='1.jpg' style='position: absolute; width: 200px' />
+<script>
+			var x=0;
+			var d=10;
+			function inicializa() {
+				setInterval(function(){actualiza();}, 10);
+			}
+ 
+			function actualiza() {
+				var el = document.getElementById('i1');
+				if(x+d > window.innerWidth-el.width || x+d < 0) d = 0 - d;
+				x=x+d;
+ 
+				if(el) {
+					el.style.left = x+'px';
+					el.style.transform = 'rotate('+x+'deg)';
+				}
+			}
+</script>
+</body>
+</html>-->

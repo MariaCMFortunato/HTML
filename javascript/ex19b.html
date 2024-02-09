@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+    p{
+        font-size: 20px;
+        color:blue;
+    }
+</style>
+<script type="text/javascript">
+    function Submete()
+    {
+        var UI= document.getElementById("userInput").value;
+        var resposta="";
+        switch (UI){
+            case "Olá": resposta="Olá estás bom?";
+                break;
+            case "Sim": resposta="ainda bem";
+                break;
+            case "Estás bom?": resposta="mete-te na tua vida";
+                break;
+            case "Qual a tua idade?": resposta="18 anos";
+                break;
+            case "Mentiroso": resposta="ah pois é";
+                break;
+            case "Como vai a vida?": resposta="on rails! :)";
+                break;
+            case "Onde estavas?": resposta="Aqui!!!";
+                 break;
+            case "Ondocotô?": resposta = "Estás aqui ao pé de mim?";
+                break;
+            case "Ondocovô?": resposta = "Vais ao futebol!";
+                break;
+            case "Comocotô?": resposta = "Espero que estejas bem!";
+                break;
+            default: resposta = " ";
+        }
+        
+        document.getElementById("result").innerHTML=resposta;
+    }
+    
+    function Limpa()
+    {
+        document.getElementById("userInput").value=""
+        document.getElementById("result").innerHTML=""
+    }
+    
+</script>
+</head>
+<body>
+    <input id="userInput" style="font-size: 20px;" size=60 onkeyup="Submete()">
+    <button onclick="Limpa()" style="font-size: 20px;">limpa</button><br>
+    <p id="result"></p>
+</body>
+</html>

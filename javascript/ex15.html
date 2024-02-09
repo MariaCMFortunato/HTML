@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+    h1{
+        font-size: 20px;
+        color:blue;
+    }
+</style>
+<script type="text/javascript">
+    function pizza()
+    {
+        document.getElementById("result").innerHTML="escreveu: "+document.getElementById("userInput").value;
+        
+        document.getElementById("result2").innerHTML="escreveu: "+document.getElementById("userInput").value;
+    }
+</script>
+</head>
+<body>
+    <input id="userInput" onkeyup="pizza()" size="60">
+    <button onclick="pizza()">Me clique, vai ...</button><br>
+    <div id="result"> ...... </div>
+    <div id="result2"> ...... </div>
+</body>
+</html>

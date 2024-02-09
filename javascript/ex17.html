@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <style>
+            p{
+                font-size: 20px;
+                color:blue;
+            }
+        </style>
+        <script type="text/javascript">
+            livros=["Harry Potter","Codigo Da Vinci","O Alquimista", "Veronika Decide Morrer"];
+            var editoras=["Gradiva","Bertrand","Leya","Porto Editora","Oficina Do Livro","Planeta","Editorial Presença", "Plátano Editora","Grupo Lidel","Livros do Brasil","Pergaminho","Esfera dos Livros","Girassol", "Livros Horizonte"];
+
+            function ProcuraLivro()
+            {
+                var index=parseInt(document.getElementById("index").value);
+                var texto="";
+                var i=0;
+                for(i=0; i<3;i++)
+                {
+                    texto=texto+livros[i]+"<br>";
+                }
+                texto=texto+" O livro escolhido: "+ livros[index];
+                document.getElementById("livro").innerHTML = texto;
+            }
+
+            function ProcuraEditora()
+            {
+                var indice=parseInt(document.getElementById("indice").value);
+                var texto="";
+                var i=0;
+                for(i=0; i<14;i++)
+                {
+                    texto=texto+editoras[i]+"<br>";
+                }
+                texto=texto+" A editora escolhida: "+ editoras[indice];
+                document.getElementById("editora").innerHTML = texto;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <input id="index" onkeyup="ProcuraLivro()">
+        <input id="indice" onkeyup="ProcuraEditora()">
+        <p id="livro"></p>
+        <p id="editora"></p>
+    </body>
+</html>

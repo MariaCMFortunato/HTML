@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>exemplo 20</title>
+</head>
+<body>
+    <form>
+        Nome:
+        <input id="t1" type="text" name="nome" onkeyup="document.getElementById('message').innerHTML=document.getElementById('t1').value+' '+document.getElementById('s1').value+' '+document.getElementById('m1').value+' '+document.getElementById('d1').value+' '">
+        
+        Sexo:
+        <select id="s1" name="sexo" onchange="document.getElementById('message').innerHTML=document.getElementById('t1').value+' '+document.getElementById('s1').value+' '+document.getElementById('m1').value+' '+document.getElementById('d1').value+' '">
+            <option value="" selected>--</option>
+            <option value="masculino">masculino</option>
+            <option value="feminino">feminino</option>
+        </select><br><br>
+        
+        Morada:
+        <input id="m1" type="text" name="morada" cols="50" onkeyup="document.getElementById('message').innerHTML=document.getElementById('t1').value+' '+document.getElementById('s1').value+' '+document.getElementById('m1').value+' '+document.getElementById('d1').value+' '"><br><br>
+        
+        Distrito:
+        <select id="d1" name="distrito" onchange="document.getElementById('message').innerHTML=document.getElementById('t1').value+' '+document.getElementById('s1').value+' '+document.getElementById('m1').value+' '+document.getElementById('d1').value+' '">
+            <option value="" selected>--</option>
+            <option value="Beja">Beja</option>
+            <option value="Faro">Faro</option>
+            <option value="Lisboa">Lisboa</option>
+            <option value="Setubal">Setúbal</option>
+        </select><br><br>
+        <textarea name="message" id="message" rows="20" cols="60"></textarea>
+        <br>
+    </form>
+</body>
+</html>

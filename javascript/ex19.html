@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+    p{
+        font-size: 20px;
+        color:blue;
+    }
+</style>
+<script type="text/javascript">
+    function Submete()
+    {
+        var UI= document.getElementById("userInput").value;
+        var resposta="";
+        if (UI=="Olá") resposta="Olá estás bom?";
+        else if(UI=="Sim") resposta="ainda bem";
+        else if(UI=="Estás bom?") resposta="mete-te na tua vida";
+        else if(UI=="Qual a tua idade?") resposta="18 anos";
+        else if(UI=="Mentiroso") resposta="ah pois é";
+        else if(UI=="Como vai a vida?") resposta="on rails! :)";
+        else if(UI=="Onde estavas?") resposta="Aqui!!!";
+        else if(UI=="Ondocotô?") resposta = "Estás aqui ao pé de mim?";
+        else if(UI=="Ondocovô?") resposta = "Vais ao futebol!";
+        else if(UI=="Comocotô?") resposta = "Espero que estejas bem!";
+        else resposta = " ";
+        document.getElementById("result").innerHTML=resposta;
+    }
+    function Limpa()
+    {
+        document.getElementById("userInput").value=""
+        document.getElementById("result").innerHTML=""
+    }
+    
+</script>
+</head>
+<body>
+    <input id="userInput" style="font-size: 20px;" size=60 onkeyup="Submete()">
+    <button onclick="Limpa()" style="font-size: 20px;">limpa</button><br>
+    <p id="result"></p>
+</body>
+</html>

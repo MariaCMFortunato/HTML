@@ -1,0 +1,111 @@
+body
+{
+font-size:20px;	
+}
+
+h1
+{
+font-size:40px;
+}
+
+.conteudoEsquerdo
+{
+width: 68%;
+float: left;
+border-radius: 5px;
+font-size: 5vw;   /*5px 5vw 5vh 5em 5rem */
+}
+
+.conteudoDireito
+{
+width: 30%;
+float: left;
+border-radius: 5px;
+background-color:cyan;
+}
+
+.divLoucas
+{
+background-color:yellow;
+animation-name: animacaoLouca;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+
+.divMissil
+{
+background-color:black;
+position:relative;
+width: 50px;
+height: 50px;
+animation-name: animacaoMissil;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+}
+
+.divMissil2
+{
+background-color:orange;
+position:relative;
+width: 50px;
+height: 50px;
+animation-name: animacaoMissil;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+}
+
+@Keyframes animacaoLouca
+{
+	
+0% {background-color:pink;border-radius:100px; height:100px}	
+50% {background-color:white;border-radius:0px; height:300px}	
+100% {background-color:pink;border-radius:100px; height:500px}	
+	
+}
+
+@Keyframes animacaoMissil
+{
+     \\primeira percentagem é da div mãe
+0%   {left:0%;top:0%;width:50px;height:10px}	
+25%  {left:100%;top:0%;width:50px;height:10px}		
+26%  {left:100%;top:0%;width:50px;height:10px}	
+50%  {left:100%;top:100%;width:10px;height:50px}
+51%  {left:100%;top:100%;width:50px;height:10px}	
+75%  {left:0%;top:100%;width:50px;height:10px}	
+76%  {left:0%;top:100%;width:10px;height:50px}	
+100% {left:0%;top:0%;width:10px;height:50px}	
+}
+
+@Keyframes animacaoMissil2
+{
+     
+100%   {left:0%;top:0%;width:50px;height:10px}	
+76%  {left:100%;top:0%;width:50px;height:10px}		
+75%  {left:100%;top:0%;width:50px;height:10px}	
+51%  {left:100%;top:100%;width:10px;height:50px}
+50%  {left:100%;top:100%;width:50px;height:10px}	
+26%  {left:0%;top:100%;width:50px;height:10px}	
+25%  {left:0%;top:100%;width:10px;height:50px}	
+0% {left:0%;top:0%;width:10px;height:50px}	
+}
+
+@media only screen
+and (min-width: 0px)
+and (max-width: 349px)
+{
+    .conteudoEsquerdo
+    {
+        width:100%;
+        float: left;
+        border-radius: 5px;
+        background-color: yellow;
+    }
+    .conteudoDireito
+    {
+        width: 0%;
+        float: left;
+        border-radius: 5px;
+        background-color: cyan;
+        font-size: 0px;
+    }
+}
