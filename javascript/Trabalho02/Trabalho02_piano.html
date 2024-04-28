@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>O PIANO DA MARIA</title>
+</head>
+
+<body onkeydown="teclado(event)" style="background-image: url(onda.jpeg); background-size: cover;">
+    <h1 style="text-align: left; margin-left: 25%; color:aquamarine; font-size:100px;">O PIANO DA MARIA</h1>
+    <p id="tecla" style="font-size: 0px;"></p>
+    <audio id="a1" controls style="width:0px" preload="auto">
+        <source src="040.wav">
+    </audio>
+
+    <audio id="a2" controls style="width:0px" preload="auto">
+        <source src="041.wav">
+    </audio>
+
+    <audio id="a3" controls style="width:0px" preload="auto">
+        <source src="042.wav">
+    </audio>
+
+    <audio id="a4" controls style="width:0px" preload="auto">
+        <source src="043.wav">
+    </audio>
+
+    <audio id="a5" controls style="width:0px" preload="auto">
+        <source src="044.wav">
+    </audio>
+
+    <audio id="a6" controls style="width:0px" preload="auto">
+        <source src="045.wav">
+    </audio>
+
+    <audio id="a7" controls style="width:0px" preload="auto">
+        <source src="046.wav">
+    </audio>
+
+    <audio id="a8" controls style="width:0px" preload="auto">
+        <source src="047.wav">
+    </audio>
+
+    <audio id="a9" controls style="width:0px" preload="auto">
+        <source src="048.wav">
+    </audio>
+
+    <audio id="a10" controls style="width:0px" preload="auto">
+        <source src="049.wav">
+    </audio>
+
+    <audio id="a11" controls style="width:0px" preload="auto">
+        <source src="050.wav">
+    </audio>
+
+    <audio id="a12" controls style="width:0px" preload="auto">
+        <source src="051.wav">
+    </audio>
+
+    <audio id="a13" controls style="width:0px" preload="auto">
+        <source src="052.wav">
+    </audio>
+
+    <audio id="a14" controls style="width:0px" preload="auto">
+        <source src="053.wav">
+    </audio>
+
+    <audio id="a15" controls style="width:0px" preload="auto">
+        <source src="054.wav">
+    </audio>
+    <audio id="a16" controls style="width:0px" preload="auto">
+        <source src="055.wav">
+    </audio>
+
+    <audio id="a17" controls style="width:0px" preload="auto">
+        <source src="056.wav">
+    </audio>
+
+    <audio id="house" controls style="width:0px" preload="auto">
+        <source src="house.mp3">
+    </audio>
+
+    <audio id="kadoc" controls style="width:0px" preload="auto">
+        <source src="Kadoc - The Nighttrain .m4a">
+    </audio>
+    <div
+        style="background-image: url(piano.jpeg); background-color: rgb(35, 102, 236); width: 647px; margin-top: -97px; margin-left: 29.9999%; height:285px;">
+        <button onclick="donota()"
+            style="position: absolute; top:250px; margin-left: 30%;;left: 0px; width: 50px; height: 250px">1</button>
+
+        <button onclick="renota()"
+            style="position: absolute; top:250px; margin-left: 30%;; left: 35px;width: 30px; height: 150px;background-color: black;color:antiquewhite;z-index:1">q</button>
+
+        <button onclick="minota()"
+            style="position: absolute; top:250px; margin-left: 30%; left: 50px; width: 50px; height: 250px">2</button>
+
+        <button onclick="fanota()"
+            style="position: absolute; top:250px; margin-left: 30%; left: 85px;width: 30px; height: 150px;background-color: black;color:antiquewhite;z-index:1">w</button>
+
+        <button onclick="solnota()"
+            style="position: absolute; top:250px; margin-left: 30%; left: 100px; width: 50px; height: 250px">3</button>
+
+        <button onclick="lanota()"
+            style="position: absolute; top:250px; margin-left: 30%; left: 150px; width: 50px; height: 250px">4</button>
+
+        <button onclick="sinota()"
+            style="position: absolute; top:250px; margin-left: 30%; left: 185px;width: 30px; height: 150px;background-color: black;color:antiquewhite;z-index:1">e</button>
+
+        <button onclick="a8nota()"
+            style="position: absolute; top:250px; margin-left: 30%; left: 200px; width: 50px; height: 250px">5</button>
+
+        <button onclick="a9nota()"
+            style="position: absolute; top:250px; margin-left: 30%; left: 235px;width: 30px; height: 150px;background-color: black; color:antiquewhite; z-index:1">r</button>
+
+        <button onclick="a10nota()"
+            style="position: absolute; top:250px; margin-left: 30%; left: 250px; width: 50px; height: 250px">6</button>
+
+        <button onclick="a11nota()"
+            style="position: absolute; top:250px; margin-left: 30%; left: 285px;width: 30px; height: 150px;background-color: black; color:antiquewhite; z-index:1">a</button>
+
+        <button onclick="a12nota()"
+            style="position: absolute; top:250px; margin-left: 30%; left: 300px; width: 50px; height: 250px">7</button>
+
+        <button onclick="a13nota()"
+            style="position: absolute; top:250px; margin-left: 30%; left: 350px; width: 50px; height: 250px">8</button>
+
+        <button onclick="a14nota()"
+            style="position: absolute; top:250px; margin-left: 30%; left: 385px;width: 30px; height: 150px;background-color: black;color:antiquewhite;z-index:1">s</button>
+
+        <button onclick="a15nota()"
+            style="position: absolute; top:250px; margin-left: 30%; left: 400px; width: 50px; height: 250px">9</button>
+
+        <button onclick="a16nota()"
+            style="position: absolute; top:250px; margin-left: 30%; left: 435px;width: 30px; height: 150px;background-color: black;color:antiquewhite; z-index:1">d</button>
+
+        <button onclick="a17nota()"
+            style="position: absolute; top:250px; margin-left: 30%; left: 450px; width: 50px; height: 250px">10</button>
+
+        <button onclick="separador"
+            style="position: absolute; top:250px; margin-left: 30%; left: 500px; width: 50px; height: 250px;background-color: black;color:antiquewhite;"></button>
+
+        <button onclick="house()"
+            style="position: absolute; top:300px; margin-left: 30%; left: 550px;width: 50px; height: 200px;background-color: rgb(240, 233, 233);">
+            <u>h</u>ouse</button>
+
+        <button onclick="kadoc()"
+            style="position: absolute; top: 300px; margin-left: 30%; left: 600px; width: 50px; height: 200px"><u>k</u>adoc</button>
+        <button onclick="stop()"
+            style="position: absolute; top: 250px; margin-left: 30%; left: 550px; width: 100px; height: 50px">s<u>t</u>op</button>
+    </div>
+
+    <div>
+    </div>
+
+    <script type="text/javascript">
+        function donota() {
+            document.getElementById("a1").pause();
+            document.getElementById("a1").currentTime = 0;
+            document.getElementById("a1").play();
+        }
+
+        function renota() {
+            document.getElementById("a2").pause();
+            document.getElementById("a2").currentTime = 0;
+            document.getElementById("a2").play();
+        }
+
+        function minota() {
+            document.getElementById("a3").pause();
+            document.getElementById("a3").currentTime = 0;
+            document.getElementById("a3").play();
+        }
+
+        function fanota() {
+            document.getElementById("a4").pause();
+            document.getElementById("a4").currentTime = 0;
+            document.getElementById("a4").play();
+        }
+
+        function solnota() {
+            document.getElementById("a5").pause();
+            document.getElementById("a5").currentTime = 0;
+            document.getElementById("a5").play();
+        }
+
+        function lanota() {
+            document.getElementById("a6").pause();
+            document.getElementById("a6").currentTime = 0;
+            document.getElementById("a6").play();
+        }
+
+        function sinota() {
+            document.getElementById("a7").pause();
+            document.getElementById("a7").currentTime = 0;
+            document.getElementById("a7").play();
+        }
+
+        function a8nota() {
+            document.getElementById("a8").pause();
+            document.getElementById("a8").currentTime = 0;
+            document.getElementById("a8").play();
+        }
+
+        function a9nota() {
+            document.getElementById("a9").pause();
+            document.getElementById("a9").currentTime = 0;
+            document.getElementById("a9").play();
+        }
+
+        function a10nota() {
+            document.getElementById("a10").pause();
+            document.getElementById("a10").currentTime = 0;
+            document.getElementById("a10").play();
+        }
+
+        function a11nota() {
+            document.getElementById("a11").pause();
+            document.getElementById("a11").currentTime = 0;
+            document.getElementById("a11").play();
+        }
+
+        function a12nota() {
+            document.getElementById("a12").pause();
+            document.getElementById("a12").currentTime = 0;
+            document.getElementById("a12").play();
+        }
+
+        function a13nota() {
+            document.getElementById("a13").pause();
+            document.getElementById("a13").currentTime = 0;
+            document.getElementById("a13").play();
+        }
+
+        function a14nota() {
+            document.getElementById("a14").pause();
+            document.getElementById("a14").currentTime = 0;
+            document.getElementById("a14").play();
+        }
+
+        function a15nota() {
+            document.getElementById("a15").pause();
+            document.getElementById("a15").currentTime = 0;
+            document.getElementById("a15").play();
+        }
+
+        function a16nota() {
+            document.getElementById("a16").pause();
+            document.getElementById("a16").currentTime = 0;
+            document.getElementById("a16").play();
+        }
+
+        function a17nota() {
+            document.getElementById("a17").pause();
+            document.getElementById("a17").currentTime = 0;
+            document.getElementById("a17").play();
+        }
+
+        function sinota() {
+            document.getElementById("a7").pause();
+            document.getElementById("a7").currentTime = 0;
+            document.getElementById("a7").play();
+        }
+
+        function kadoc() {
+            document.getElementById("kadoc").pause();
+            document.getElementById("kadoc").currentTime = 0;
+            document.getElementById("kadoc").play();
+        }
+
+        function house() {
+            document.getElementById("house").pause();
+            document.getElementById("house").currentTime = 0;
+            document.getElementById("house").play();
+        }
+        function stop() {
+            document.getElementById("house").pause();
+            document.getElementById("kadoc").pause();
+        }
+
+        function teclado(event) {
+            var key = event.keyCode;
+            document.getElementById("tecla").innerHTML = key;
+            if (key == 49)
+                donota();
+            if (key == 50)
+                minota();
+            if (key == 51)
+                solnota();
+            if (key == 52)
+                lanota();
+            if (key == 53)
+                a8nota();
+            if (key == 54)
+                a10nota();
+            if (key == 55)
+                a12nota();
+            if (key == 56)
+                a13nota();
+            if (key == 57)
+                a15nota();
+            if (key == 48)
+                a17nota();
+            if (key == 81)
+                renota();
+            if (key == 87)
+                fanota();
+            if (key == 69)
+                sinota();
+            if (key == 82)
+                a9nota();
+            if (key == 65)
+                a11nota();
+            if (key == 83)
+                a14nota();
+            if (key == 68)
+                a16nota();
+            if (key == 72)
+                house();
+            if (key == 75)
+                kadoc();
+            if (key == 84)
+                stop();
+        }
+    </script>
+</body>
+
+</html>
