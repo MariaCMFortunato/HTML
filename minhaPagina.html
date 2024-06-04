@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Programação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .project a:hover {
+            color: #00bfff;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .about,
+        .projects,
+        .contact {
+            background-color: #e6f7ff;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .projects .project {
+            background-color: #ffffff;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        h2 {
+            color: #1e90ff;
+        }
+
+        .project a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .project {
+                padding: 0.5rem;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Portfólio de Programação</h1>
+        <nav>
+            <a href="#about">Sobre Mim</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Meu nome é [Seu Nome] e sou um desenvolvedor apaixonado por programação. Trabalho com diversas
+            linguagens e tecnologias para criar soluções inovadoras e eficientes. Bem-vindo ao meu portfólio!</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projetos</h2>
+        <div class="project">
+            <h3>Projeto 1</h3>
+            <p>Descrição breve do projeto 1.</p>
+            <p>Tecnologias usadas: HTML, CSS, JavaScript</p>
+            <a href="https://github.com/seuusuario/projeto1" target="_blank">Ver no GitHub</a>
+        </div>
+        <div class="project"> <!-- com imagens de capturas de ecrã -->
+            <h3>Projeto 2</h3>
+            <img src="caminho/para/imagem.jpg" alt="Imagem do Projeto 1" style="max-width:100%;">
+            <p>Descrição breve do projeto 1.</p>
+            <p>Tecnologias usadas: HTML, CSS, JavaScript</p>
+            <a href="https://github.com/seuusuario/projeto1" target="_blank">Ver no GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Projeto 3</h3>
+            <p>Descrição breve do projeto 2.</p>
+            <p>Tecnologias usadas: Python, Flask</p>
+            <a href="https://github.com/seuusuario/projeto2" target="_blank">Ver no GitHub</a>
+        </div>
+        <div class="project"> <!-- com imagens de capturas de ecrã -->
+            <h3>Projeto 4</h3>
+            <img src="caminho/para/imagem.jpg" alt="Imagem do Projeto 1" style="max-width:100%;">
+            <p>Descrição breve do projeto 1.</p>
+            <p>Tecnologias usadas: HTML, CSS, JavaScript</p>
+            <a href="https://github.com/seuusuario/projeto1" target="_blank">Ver no GitHub</a>
+        </div>
+        <!-- Adicione mais projetos aqui -->
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <form action="https://formspree.io/f/seuformulario" method="POST">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Mensagem:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <!--<form action="mailto:seuemail@dominio.com" method="post" enctype="text/plain">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Mensagem:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form> -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
+        <p>Siga-me:</p>
+        <a href="https://twitter.com/seuusuario" target="_blank">Twitter</a> |
+        <a href="https://linkedin.com/in/seuusuario" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/seuusuario" target="_blank">GitHub</a>
+    </footer>
+    <!-- Recursos Úteis
+     Ícones: Font Awesome (https://fontawesome.com/)
+     Paletas de Cores: Coolors (https://coolors.co/)
+     Inspiração para Layouts: Dribbble (https://dribbble.com/)-->
+
+</body>
+
+</html>
